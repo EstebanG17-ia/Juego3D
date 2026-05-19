@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://dyi8s8hxvte6i"]
+
+[ext_resource type="PackedScene" uid="uid://c4uyui5udqjqc" path="res://player.tscn" id="1_0f027"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_o3jxj"]
+sky_top_color = Color(0, 0.49803922, 0.7254902, 1)
+sky_horizon_color = Color(0.6392157, 0.2627451, 0.38431373, 1)
+ground_bottom_color = Color(0, 0.21568628, 0.0627451, 1)
+ground_horizon_color = Color(0.36862746, 0.27058825, 1, 1)
+
+[sub_resource type="Sky" id="Sky_0f027"]
+sky_material = SubResource("ProceduralSkyMaterial_o3jxj")
+
+[sub_resource type="Environment" id="Environment_2c62f"]
+background_mode = 2
+sky = SubResource("Sky_0f027")
+tonemap_mode = 2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gyfs4"]
+albedo_color = Color(0.5176471, 0.34509805, 0, 1)
+
+[node name="MainScene" type="Node3D" unique_id=746475150]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1263158017]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 2.1341832, 0)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1128944637]
+environment = SubResource("Environment_2c62f")
+
+[node name="Objetos escena" type="Node" parent="." unique_id=586671517]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Objetos escena" unique_id=1287524341]
+transform = Transform3D(10.226398, 0, 0, 0, 0.22223657, 0, 0, 0, 8.918222, 0, 0, 0)
+use_collision = true
+material = SubResource("StandardMaterial3D_gyfs4")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Objetos escena" unique_id=1639286884]
+transform = Transform3D(10.139579, 0, 0, 0, 2.2364268, 0, 0, 0, 0.50295866, 0, 1.2199664, 4.694384)
+use_collision = true
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Objetos escena" unique_id=485336031]
+transform = Transform3D(0.38239878, 0, 0, 0, 2.2816534, 0, 0, 0, 9.269291, -5.2537575, 1.2130184, 0.17937076)
+use_collision = true
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Objetos escena" unique_id=208810360]
+transform = Transform3D(10.614827, 0, 0, 0, 2.2828908, 0, 0, 0, 0.29419097, -0.11704242, 1.2077627, -4.5885487)
+use_collision = true
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Objetos escena" unique_id=1197585598]
+transform = Transform3D(0.20896041, 0, 0, 0, 2.5841382, 0, 0, 0, 9.520735, 5.295016, 1.1549098, 0.029298425)
+
+[node name="Player" parent="." unique_id=157991202 instance=ExtResource("1_0f027")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)

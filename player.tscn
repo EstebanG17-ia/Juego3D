@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://c4uyui5udqjqc"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_sh265"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_4flbx"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_onrkg"]
+
+[node name="Player" type="RigidBody3D" unique_id=157991202]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=532677433]
+transform = Transform3D(0.58486634, 0, 0, 0, 0.6641162, 0, 0, 0, 0.62465215, 0, -0.0039299726, 0)
+mesh = SubResource("SphereMesh_sh265")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=369455932]
+transform = Transform3D(0.59541476, 0, 0, 0, 0.696402, 0, 0, 0, 0.65449435, 0, 0, 0)
+shape = SubResource("SphereShape3D_4flbx")
+
+[node name="SpringArm3D" type="SpringArm3D" parent="." unique_id=1877837037]
+
+[node name="Camera3D" type="Camera3D" parent="SpringArm3D" unique_id=2040002953]
+transform = Transform3D(1, 0, 0, 0, 0.9847441, 0.17400913, 0, -0.17400913, 0.9847441, 0, 0.5139711, 1.1673939)
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=326373805]
+transform = Transform3D(-0.15621094, 0, 0, 0, 0.41439563, 0, 0, 0, 0.16324586, 0, 0.13016471, 0)
+mesh = SubResource("BoxMesh_onrkg")
