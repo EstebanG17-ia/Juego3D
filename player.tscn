@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://0ucy3mxufjfh"]
 
 [ext_resource type="Script" uid="uid://cs5m0h0cb3u8e" path="res://player.gd" id="1_4flbx"]
+[ext_resource type="PackedScene" uid="uid://hwbvfb7jllkx" path="res://hud.tscn" id="2_onrkg"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_sh265"]
 
@@ -14,11 +15,11 @@ collision_mask = 5
 script = ExtResource("1_4flbx")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=532677433]
-transform = Transform3D(0.58486634, 0, 0, 0, 0.6641162, 0, 0, 0, 0.62465215, 0, -0.0039299726, 0)
+transform = Transform3D(0.5, 0, 0, 0, -0.5728128, 0, 0, 0, 0.5, 0, -0.0039299726, 0)
 mesh = SubResource("SphereMesh_sh265")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=369455932]
-transform = Transform3D(0.59541476, 0, 0, 0, 0.696402, 0, 0, 0, 0.65449435, 0, 0, 0)
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
 shape = SubResource("SphereShape3D_4flbx")
 
 [node name="SpringArm3D" type="SpringArm3D" parent="." unique_id=1877837037]
@@ -26,6 +27,8 @@ shape = SubResource("SphereShape3D_4flbx")
 [node name="Camera3D" type="Camera3D" parent="SpringArm3D" unique_id=2040002953 groups=["Players"]]
 transform = Transform3D(1, 0, 0, 0, 0.97415763, 0.22586928, 0, -0.22586928, 0.97415763, 0, 1.0005567, 1.7783997)
 
+[node name="HUD" parent="SpringArm3D" unique_id=926501283 instance=ExtResource("2_onrkg")]
+
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=326373805]
-transform = Transform3D(-0.15621094, 0, 0, 0, 0.41439563, 0, 0, 0, 0.16324586, 0, 0.13016471, 0)
+transform = Transform3D(-0.15621094, 0, 0, 0, 0.18724559, 0, 0, 0, 0.16324583, 0, 0.13016471, 0)
 mesh = SubResource("BoxMesh_onrkg")

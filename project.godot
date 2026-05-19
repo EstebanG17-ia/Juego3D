@@ -15,9 +15,14 @@ run/main_scene="uid://dyi8s8hxvte6i"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+GameManager="*uid://cxwfxgrf7lmbf"
+
 [global_group]
 
 Players=""
+Coleccionables=""
 
 [input]
 

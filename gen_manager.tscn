@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dtyk6jgfehfgx"]
+
+[ext_resource type="Script" uid="uid://dw0ti63qgiub2" path="res://gen_manager.gd" id="1_6wpha"]
+
+[node name="GameManager" type="Node" unique_id=1576979825]
+script = ExtResource("1_6wpha")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=1421518220]

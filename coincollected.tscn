@@ -10,18 +10,19 @@ albedo_color = Color(1, 1, 0, 1)
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_tcpo2"]
 radius = 0.34765625
 
-[node name="coincollected" type="Area3D" unique_id=1417554974]
+[node name="coincollected" type="Area3D" unique_id=1417554974 groups=["Coleccionables"]]
+transform = Transform3D(0.030012876, 1.281773e-09, 0, -2.6238087e-09, 0.014661776, 0, 0, 0, -0.016602345, 0, 0, 0)
 collision_layer = 4
 collision_mask = 3
 script = ExtResource("1_b8c7x")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1206158538]
-transform = Transform3D(-0.009738814, 0.108923875, 0, -0.99995255, -0.0010608393, 0, 0, 0, 1, 0, 0.16201806, 0)
+transform = Transform3D(-0.0097638415, 0.04710604, 0, -1.0025222, -0.0004587785, 0, 0, 0, 1, 0, 0.16201806, 0)
 mesh = SubResource("CylinderMesh_jh1p1")
 surface_material_override/0 = SubResource("StandardMaterial3D_b8c7x")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1936047698]
-transform = Transform3D(-0.01291143, 0.11271062, 0, -1.4736056, -0.0009875472, 0, 0, 0, 1.6125587, 0, 0.17100114, 0)
+transform = Transform3D(-0.012941767, 0.04768213, 0, -1.4770683, -0.00041778092, 0, 0, 0, 1.492005, 0, 0.17100115, 0)
 shape = SubResource("CylinderShape3D_tcpo2")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

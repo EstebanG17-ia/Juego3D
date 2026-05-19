@@ -21,7 +21,7 @@ func _input(event: InputEvent):
 func _ready() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	spring_arm_3d.top_level = true
-	spring_arm_3d.position = Vector3(0, 3, 0)
+	
 
 func _process(delta: float) -> void:
 	spring_arm_3d.global_position = self.global_position
