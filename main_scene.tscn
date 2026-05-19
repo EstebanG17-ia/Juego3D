@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dyi8s8hxvte6i"]
 
-[ext_resource type="PackedScene" uid="uid://c4uyui5udqjqc" path="res://player.tscn" id="1_0f027"]
+[ext_resource type="PackedScene" uid="uid://0ucy3mxufjfh" path="res://player.tscn" id="1_0f027"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_o3jxj"]
 sky_top_color = Color(0, 0.49803922, 0.7254902, 1)
@@ -49,6 +49,7 @@ use_collision = true
 
 [node name="CSGBox3D5" type="CSGBox3D" parent="Objetos escena" unique_id=1197585598]
 transform = Transform3D(0.20896041, 0, 0, 0, 2.5841382, 0, 0, 0, 9.520735, 5.295016, 1.1549098, 0.029298425)
+use_collision = true
 
 [node name="Player" parent="." unique_id=157991202 instance=ExtResource("1_0f027")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
