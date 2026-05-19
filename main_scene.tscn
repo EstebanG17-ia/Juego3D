@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dyi8s8hxvte6i"]
 
 [ext_resource type="PackedScene" uid="uid://0ucy3mxufjfh" path="res://player.tscn" id="1_0f027"]
+[ext_resource type="PackedScene" uid="uid://dtpuc457n6f3v" path="res://coincollected.tscn" id="2_2c62f"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_o3jxj"]
 sky_top_color = Color(0, 0.49803922, 0.7254902, 1)
@@ -53,3 +54,6 @@ use_collision = true
 
 [node name="Player" parent="." unique_id=157991202 instance=ExtResource("1_0f027")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="coincollected" parent="." unique_id=1417554974 instance=ExtResource("2_2c62f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.086674, 0.571409, -0.061056852)
